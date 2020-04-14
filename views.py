@@ -24,3 +24,8 @@ def projects(request):
     return render(request, 'base.html', context)
 
 
+def github_api(request):
+    response = requests.get('https://api.github.com/users/devdav1999/repos')
+    repos = response.json()
+    context = {'github_repos':repos}
+    return render(request, 'github.html', context)

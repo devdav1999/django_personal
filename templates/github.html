@@ -55,7 +55,19 @@
   </nav>
 
 
-{{content|safe}}
+<div class="container" id="git-container">
+      <div class="row">
+
+        <div class="col-sm-8">
+            <h1 id='git-heading'>My github repos</h1>
+            <ol id='git-links'>
+            {% for repo in github_repos %}
+                <li> <a id='git-links' href="https://github.com/devdav1999/{{ repo.name }}">{{ repo.name }}</a></li>
+            {% endfor %}
+            </ol>
+        </div>
+      </div>
+</div>
 
   
 </body>
