@@ -4,8 +4,8 @@ import views
 
 urlpatterns = [
     path('', views.homepage),
-    path('search-results/', views.search_results),
-    path('giggle-news/', views.giggle_news),
+    path('contact', views.contact),
+    path('projects', views.projects),
 ]
 
 # Boilerplate to include static files.
