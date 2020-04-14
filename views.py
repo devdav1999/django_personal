@@ -3,23 +3,23 @@ from django.shortcuts import render
 
 
 def homepage(request):
-	content_html = open('content/index.html')
+    home_html = open('content/index.html').read()
     context = {
-    'content': content_html
+    'content': home_html
     }
     return render(request, 'base.html', context)
 
 def contact(request):
-	content_html = open('content/contact.html')
+    contact_html = open('content/contact.html').read()
     context = {
-    'content': content_html
+    'content': contact_html
     }
     return render(request, 'base.html', context)
 
 def projects(request):
-	content_html = open('content/projects.html')
+    projects_html = open('content/projects.html').read()
     context = {
-    'content': content_html
+    'content': projects_html
     }
     return render(request, 'base.html', context)
 

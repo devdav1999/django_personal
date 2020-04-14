@@ -3,9 +3,9 @@ from django.urls import path
 import views
 
 urlpatterns = [
-    path('', views.homepage),
-    path('contact', views.contact),
-    path('projects', views.projects),
+    path('about-me', views.homepage),
+    path('contact-me', views.contact),
+    path('my-projects', views.projects),
 ]
 
 # Boilerplate to include static files.
